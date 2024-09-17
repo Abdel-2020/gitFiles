@@ -1,0 +1,145 @@
+/*General Styling*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {}
+
+/*Reset*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button{
+    border: 0;
+}
+
+/*General Styling*/
+
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--very-light-gray);
+}
+
+
+h1 {
+    font-family: "Big Shoulders Display";
+}
+
+p,
+a {
+    font-family: "Lexend Deca";
+}
+
+body {
+    background-color: lightblue;
+}
+
+
+
+/*End of General Styling*/
+
+
+
+/* Extra small devices (phones, 600px and down) */
+/* Default styles (mobile first) */
+/*body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    /* Styles for extra small devices */
+
+    .card-section{
+        width:85%;
+        margin: 100px auto;
+        display: block;
+    }
+    .card{
+        padding: 20px;
+        margin: 20px;
+        background-color: whitesmoke;
+        border-radius:5%;
+        height:300px;
+        width: 90%;
+    }
+    .card-icon{
+        font-size: 6rem;
+        
+    }
+    .card-title{
+        text-align: center;
+    }
+
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* Styles for small devices */
+    body {
+        background-color: lightgreen;
+    }
+
+    .card-section{
+        width:85%;
+        margin: 100px auto;
+        display: block;
+    }
+    .card{
+        padding: 20px;
+        margin: 20px;
+        background-color: whitesmoke;
+        border-radius:5%;
+        height:300px;
+        width: 90%;
+    }
+    .card-icon{
+        font-size: 6rem;
+        
+    }
+    .card-title{
+        text-align: center;
+    }
+ 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Styles for medium devices */
+    body {
+        background-color: lightyellow;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /* Styles for large devices */
+    body {
+        background-color: lightcoral;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    /* Styles for extra large devices */
+    body {
+        background-color: lightgray;
+    }
+
+  
+
+
+
+}
