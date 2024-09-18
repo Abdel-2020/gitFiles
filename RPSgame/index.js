@@ -16,41 +16,40 @@
          scissorsBtn.addEventListener('click', () => handleUserChoice(options[2]));
  }
 
-//Create a function which generates a random number between 0 and 2 which will dictate what option 
+ //Create a function which generates a random number between 0 and 2 which will dictate what option 
  //the bot will pick. Then store the result in the bot variable.
 
  let generateBotChoice = () => {
-        //Generate a random value between 0 and 2
-        let randomVal = Math.floor((Math.random() * 3));
-        //Log the result in the console. 
-        console.log("Bot has shot: " + options[randomVal]);
-        //Return the value as a string. 
-        return options[randomVal];
-};
+         //Generate a random value between 0 and 2
+         let randomVal = Math.floor((Math.random() * 3));
+         //Log the result in the console. 
+         alert("Bot has shot: " + options[randomVal]);
+         //Return the value as a string. 
+         return options[randomVal];
+ };
 
 
 
  let handleUserChoice = (userChoice) => {
-        let botChoice = generateBotChoice();
-        compareChoices(userChoice, botChoice);
+         let botChoice = generateBotChoice();
+         compareChoices(userChoice, botChoice);
  };
 
 
 
  let compareChoices = (user, bot) => {
 
-        if (user == bot) {
-                alert("Draw");
-        } else if ((user == "rock" && bot == "scissors") ||
-                (user == "paper" && bot == "rock") ||
-                (user == "scissors" && bot == "paper")) {
-                alert("player wins!");
-        } else {
-                alert("bot wins!");
-        }
-};
+         if (user == bot) {
+                 alert("Draw");
+         } else if ((user == "rock" && bot == "scissors") ||
+                 (user == "paper" && bot == "rock") ||
+                 (user == "scissors" && bot == "paper")) {
+                 alert("player wins!");
+
+         } else {
+                 alert("bot wins!");
+         }
+ };
 
 
-
-
-userInput();
+ userInput();
