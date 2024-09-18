@@ -10,7 +10,8 @@
     margin: 0;
     padding: 0;
 }
-button{
+
+button {
     border: 0;
 }
 
@@ -38,108 +39,80 @@ body {
 }
 
 
+.card-section {
+    width: 85%;
+    margin: 100px auto;
+    display: block;
+}
 
-/*End of General Styling*/
+.card {
+    padding: 20px;
+    margin: 20px;
+    background-color: whitesmoke;
+    border-radius: 5%;
+    height: 300px;
+    width: 90%;
+    cursor:pointer;
+}
 
-
-
-/* Extra small devices (phones, 600px and down) */
-/* Default styles (mobile first) */
-/*body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }*/
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-
-    /* Styles for extra small devices */
-
-    .card-section{
-        width:85%;
-        margin: 100px auto;
-        display: block;
-    }
-    .card{
-        padding: 20px;
-        margin: 20px;
-        background-color: whitesmoke;
-        border-radius:5%;
-        height:300px;
-        width: 90%;
-    }
-    .card-icon{
-        font-size: 6rem;
-        
-    }
-    .card-title{
-        text-align: center;
-    }
-
+.card-icon {
+    font-size: 6rem;
 
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+.card-title {
+    text-align: center;
+}
+/*End of General Styling*/
 
-    /* Styles for small devices */
+
+/* Mobile-first styles (applied to all screens unless overridden) */
+@media (min-width: 576px) {
+
+/* Styles for extra small devices */
     body {
         background-color: lightgreen;
     }
 
-    .card-section{
-        width:85%;
+}
+
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+
+    .card-section {
+        width: 85%;
         margin: 100px auto;
         display: block;
     }
-    .card{
+
+    .card {
         padding: 20px;
         margin: 20px;
         background-color: whitesmoke;
-        border-radius:5%;
-        height:300px;
+        border-radius: 5%;
+        height: 300px;
         width: 90%;
     }
-    .card-icon{
+
+    .card-icon {
         font-size: 6rem;
-        
+
     }
-    .card-title{
+
+    .card-title {
         text-align: center;
     }
- 
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-    /* Styles for medium devices */
-    body {
-        background-color: lightyellow;
-    }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-
-    /* Styles for large devices */
+/* Large devices (992px and up) */
+@media (min-width: 992px) {
     body {
         background-color: lightcoral;
-    }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-    /* Styles for extra large devices */
-    body {
-        background-color: lightgray;
+        /* Override background-color for large screens */
     }
 
-  
-
-
+    .card-section {
+        display: flex;
+    }
 
 }
